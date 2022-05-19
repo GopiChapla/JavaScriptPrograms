@@ -1,0 +1,33 @@
+div{
+    border:solid; 
+    width:350px; 
+    height:350px;  
+    margin-left:500px; 
+}
+
+.txt{
+    width: 200px;
+    height: 30px;
+    margin-left: 70px;
+    margin-top: 30px;
+}
+
+.btn{
+    width: 30px;
+    height: 30px;
+    margin: 25px;
+    padding: 5px;
+}
+
+#btnclr{
+    width: 70px;
+    height: 30px;
+    margin-left: 140px;
+    margin-top: 10px;
+}
+
+h1{
+    color: green;
+    margin-left: 600px;
+    margin-top: 100px;
+}

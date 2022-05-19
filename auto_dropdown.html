@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <style>
+            select{
+                width: 200px;
+                height: 40px;
+                margin: 50px;
+                margin-top: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <select id="state" onchange="select_city()">
+            <option>--Select State--</option>
+            <option>Gujarat</option>
+            <option>Maharastra</option>
+            <option>Rajasthan</option>
+            <option>Panjab</option>
+            <option>Kerala</option>
+        </select>
+        <select id="city">
+            <option>--Select City--</option>
+        </select>
+    </body>
+    <script>
+        function select_city()
+        {
+            var gujarat=['Ahemdabad','Surat','Rajkot','Baroda','Junagadh'];
+            var maharastra=['Mumbai','Pune','Nagpur','Thane'];
+            var rajasthan=['Jaipur','Jaisalmer','Udaipur','Jodhpur','Bikaner'];
+            var panjab=['Ludhiana','Amritsar','Jalandhar','Patiala'];
+            var kerala=['Thiruvananthapuram','Kozhikode','Kochi'];
+
+            var state=document.getElementById("state").value;
+            
+            if(state=='Gujarat')
+            {
+                add_city(gujarat);
+            }
+            if(state=='Maharastra')
+            {
+                add_city(maharastra);
+            }
+            if(state=='Rajasthan')
+            {
+                add_city(rajasthan);
+            }
+            if(state=='Panjab')
+            {
+                add_city(panjab);
+            }
+            if(state=='Kerala')
+            {
+                add_city(kerala);
+            }
+        }
+        function add_city(state)
+        {
+            var city=document.getElementById("city");
+            city.innerHTML="";
+            var option=document.createElement("option");
+            option.innerHTML="--Select City--";
+            city.appendChild(option);
+            for(i=0;i<state.length;i++)
+            {
+                var option=document.createElement("option");
+                option.value=state[i];
+                option.innerHTML=state[i];
+                city.appendChild(option);
+            }
+        }
+    </script>
+</html>

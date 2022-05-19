@@ -1,0 +1,34 @@
+<html>
+    <body>
+        <p>Enter Number between 1 to 100</p>
+        <input type="number" id="no" />
+        <button onclick="check_no()">Check</button><br>
+        <p id="msg" style="color:red ;"></p><br>
+        <p id="demo"></p>
+    </body>
+    <script>
+        function check_no()
+        {
+            try{
+                document.getElementById("msg").innerHTML="";
+                var no=document.getElementById("no").value;
+                if(no<1)
+                {
+                    throw "Small Number";
+                }
+                if(no>100)
+                {
+                    throw "Large Number";
+                }
+            }
+            catch(err)
+            {
+                document.getElementById("msg").innerHTML=err;
+            }
+            finally
+            {
+                document.getElementById("demo").innerHTML="Finally Block...";
+            }
+        }
+    </script>
+</html>

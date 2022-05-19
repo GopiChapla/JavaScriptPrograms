@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <button onclick="this.innerHTML='Clicked'">Clike</button>
+    </body>
+    <script>
+        const emp = {
+        fname: "Ram",
+        lname : "Dave",
+        fullName : function() {
+          return this.fname + " " + this.lname;
+        }
+      };
+
+      document.write(emp.fullName());
+
+    </script>
+</html>

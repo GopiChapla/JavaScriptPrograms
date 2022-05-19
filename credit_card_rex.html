@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Credit Card Validation</title>
+    </head>
+    <body>
+        <div style=" border: solid; padding: 50px; width: 200px; margin-left: 600px; margin-top: 200px;">
+            <input type="number" id="txt_cno" style="height: 40px; width: 200px;"/><br><br>
+            <button onclick="check_no()" style="height: 30px; width: 150px; margin-left:25px;">Check Number</button>
+        </div>
+    </body>
+    <script>
+        function check_no()
+        {
+            var no=document.getElementById("txt_cno").value;
+            var ptn1=/^(34|37)\d{13}$/;
+            var ptn2=/^4(\d{12}|\d{15})$/;
+            var ptn3=/^5[1-5]\d{14}$/;
+            var ptn4=/^(6011\d{12}|5\d{14})$/;
+            var ptn5=/^3(0[0-5]\d{11}|(6|8)\d{12})$/;
+            var ptn6=/^((2131|1800)\d{11}|35\d{14})$/;
+            ///^[2-9]\d{2}[2-9]\d{2}\d{4}$/
+            if(ptn1.test(no) || ptn2.test(no) || ptn3.test(no) || ptn4.test(no) || ptn5.test(no) || ptn6.test(no))
+            {
+                alert("Credit card Number is Valid");
+            }
+            else
+            {
+                alert("Credit Card Number is not Valid.");
+            }
+        }
+    </script>
+</html>

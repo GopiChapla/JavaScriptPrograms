@@ -1,0 +1,29 @@
+<html>
+    <script>
+        console.log("Console Log");
+        console.error("Console Error");
+        var x=10;
+        console.assert(x==5,"Console Assert");
+        for (let i = 0; i < 5; i++) {
+            console.count("count");
+        }
+        console.group("group");
+        console.log("In Group Line1");
+        console.log("In Group Line2");
+        console.groupEnd("group");
+
+        console.groupCollapsed("groupCollapsed");
+        console.log("In Group Line 1");
+        console.log("In Group Line 2");
+        console.groupEnd("group");
+
+        console.info("Console Information");
+        console.table("{fname:'Ram',lname:'Joshi',age:20}");
+        console.time("for Loop");
+        for(i=0;i<=100000;i++);
+        console.timeEnd("for Loop");
+        console.trace();
+        console.warn("This is Warn");
+        //console.clear();
+    </script>
+</html>

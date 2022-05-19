@@ -1,0 +1,75 @@
+<html>
+    <script>
+        var a=[10,20,30,40,50];
+        //foreach
+        a.forEach(fun1);
+        function fun1(v,i)
+        {
+            document.write("index : "+i+" Value : "+v+"<br>");
+        }
+
+        //map()
+        var ans = a.map(fun2);
+        function fun2(value, index) {
+            return value * (index+1);
+        }
+        document.write("<br>map Answer : "+ans+"<br>");
+
+        //filter
+        ans = a.filter(fun3);
+        function fun3(value) {
+            return value < 25;
+        }
+        document.write("<br>filterAnswer : "+ans+"<br>");
+
+        //reduce
+        ans = a.reduce(fun4);
+        function fun4(total, value) {
+            return total + value;
+        }
+        document.write("<br>reduce Answer : "+ans+"<br>");
+
+        //reduceRight
+        ans = a.reduceRight(fun5);
+        function fun5(total, value) {
+            return total + value;
+        }
+        document.write("<br>reduceRight Answer : "+ans+"<br>");
+
+        //every
+        ans = a.every(fun6);
+        function fun6(value) {
+            return value <= 50;
+        }
+        document.write("<br>every Answer : "+ans+"<br>");
+
+        //some
+        ans = a.some(fun7);
+        function fun7(value) {
+            return value <= 40;
+        }
+        document.write("<br>some Answer : "+ans+"<br>");
+
+        //find              -It returns only first occurence.
+        ans = a.find(fun8);
+        function fun8(value) {
+            return value < 40;
+        }
+        document.write("<br>find Answer : "+ans+"<br>");
+    
+        document.write('<br>Array.from("Hello")  '+Array.from("Hello")+'<br>');
+        
+        //keys
+        ans = a.keys();
+        for (let x of ans) {
+            document.write("<br>"+x+" : "+a[x]);
+        }
+
+        document.write("<br>");
+        //entries
+        ans = a.entries();
+        for (let x of ans) {
+            document.write("<br>"+x);
+        }
+    </script>
+</html>

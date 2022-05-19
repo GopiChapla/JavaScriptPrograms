@@ -1,0 +1,39 @@
+<html>
+<head>
+	<title>Array Object</title>
+</head>
+<body>
+	<script>
+        let arr=[{"Name":"Ram ","Email":"ram@gmail.com ","Gender":"Male "},
+                 {"Name":"Sita ","Email":"sita@gmail.com ","Gender":"Female "},
+                 {"Name":"Bharat ","Email":"bharat@gmail.com ","Gender":"Male "}];
+/*
+//First Method   
+        for(let a of arr)
+        {
+            document.write("<br>"+Object.entries(a));
+        }
+*/
+//Second Method
+        var ky=[];
+        var i=0;
+        for(var k in arr[0])
+        {
+            ky[i++]=k;
+        }
+        for(let v of arr)
+        {
+            document.write("<br>");
+            document.write(ky[0]+" : ");
+            document.write(v.Name);
+            document.write("<br>");
+            document.write(ky[1]+" : ");
+            document.write(v.Email);
+            document.write("<br>");
+            document.write(ky[2]+" : ");
+            document.write(v.Gender);
+            document.write("<br>");
+        }
+	</script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<html>
+    <script>
+        var color=["Red","Green","Blue","Yellow","Sky"];
+        document.write(color+"<br>");
+
+        document.write("toString() : "+color.toString()+"<br>");
+
+        document.write("join(' ') : "+color.join(' ')+"<br>");
+
+        document.write("color.pop() : "+color.pop()+"<br>");
+        document.write("After Removing element : "+color+"<br>");
+
+        document.write("color.push('Black') : "+color.push('Black')+"<br>");
+        document.write("After Adding element : "+color+"<br>");
+        
+        document.write("color.shift() : "+color.shift()+"<br>");          //remove first element
+        document.write("After Shifting element : "+color+"<br>");
+
+        document.write("color.unshift('White') : "+color.unshift("White")+"<br>");          //Add element at first position [0]index
+        document.write("After Unshifting element : "+color+"<br>");
+
+        document.write("delete color[0] : "+delete color[0]+"<br>");          
+        document.write("After Deleting element : "+color+"<br>");
+        color[0]="Gray";
+
+        var bird=["Peacock","Duck"];
+        var animal=["Elephant","Lion","Tiger"];
+        document.write("color.concat(bird) : "+color.concat(bird)+"<br>");       
+        document.write("color.concat(bird,animal) : "+color.concat(bird,animal)+"<br>");     
+
+        bird.splice(1, 0, "Crow", "Dove");
+        document.write('bird.splice(1, 0, "Crow", "Dove") : '+bird+"<br>");
+        bird.splice(2, 1, "Cock", "Sperrow");
+        document.write('bird.splice(2, 1, "Cock", "Sperrow") : '+bird+"<br>");
+        bird.splice(0,"Parrot");
+        document.write('bird.splice(0,"Parrot") : '+bird+"<br>");
+        bird.splice(2, 1);
+        document.write('bird.splice(2, 1) : '+bird+"<br>");
+
+        document.write("color : "+color+"<br>");
+        document.write("color.slice(2) : "+color.slice(2)+"<br>");
+        document.write("color.slice(1,4) : "+color.slice(1,4)+"<br>");        
+
+
+        //Sorting
+        document.write("sort() : "+color.sort()+"<br>");
+
+        document.write("reverse() : "+color.reverse()+"<br>");
+
+        //Numeric Sorting
+        var a=[10,4,29,7,41,12];
+        document.write("Before Numeric Sorting : "+a+"<br>");
+        document.write("After Simple Sorting : "+a.sort()+"<br>");
+        a.sort(function(a, b){return a - b});
+        document.write("After Numeric Sorting : "+a+"<br>");
+
+        a.sort(function(a, b){return 0.5 - Math.random()});
+        document.write("After Random Sorting : "+a+"<br>");
+
+        document.write("Math.max.apply(null, a) : "+Math.max.apply(null, a)+"<br>");
+        document.write("Math.min.apply(null, a) : "+Math.min.apply(null, a)+"<br>");
+        
+        //document.write(" : "++"<br>");
+    </script>
+</html>

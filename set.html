@@ -1,0 +1,22 @@
+<html>
+    <script>
+        const color=new Set(["Red","Green","Blue","Yellow"]);
+        document.write(color.size+"<br>");
+        
+        color.add("Gray");
+        document.write(color.size+"<br>");
+
+        var c="Cyan";
+        color.add(c);
+        document.write(color.size+"<br>");
+
+        color.forEach (function(value) {
+            document.write(value+"   ");
+        })
+        document.write("<br>");
+
+        for (const x of color.values()) {
+            document.write(x+"   ");
+        }
+    </script>
+</html>

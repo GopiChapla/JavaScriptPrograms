@@ -1,0 +1,18 @@
+<html>
+    <script>
+        const emp={fname:"Ram",
+                lname:"Joshi",
+                age:30,
+                gender:"Male",
+                fullname:function()
+                         { return this.fname +" " + this.lname },
+                hobby:["Sports","Music","Travelling"]
+                };
+        document.write("FName : "+emp.fname+"<br>");
+        document.write("LName : "+emp["lname"]+"<br>");
+        document.write("Gender : "+emp.fullname()+"<br>");
+        document.write("Age : "+emp.age+"<br>");
+        document.write("Gender : "+emp.gender+"<br>");
+        document.write("Gender : "+emp.hobby+"<br>");
+    </script>
+</html>

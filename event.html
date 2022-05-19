@@ -1,0 +1,22 @@
+<html>
+    <body onload="alert('Welcome')">
+        <button onclick="alert('onclick Event...')">OnClick</button><br>
+        <input type="text" id="txt" onChange="myonchange()"/><p id="demo"></p><br>
+        <button onmouseover="mouseover()" onmouseout="mouseout()">OnClick</button>
+        <p id="name"></p>
+    </body>
+    <script>
+        function myonchange()
+        {
+            document.getElementById("demo").innerHTML=document.getElementById("txt").value;
+        }
+        function mouseover()
+        {
+            document.getElementById("name").innerHTML="onmouseover";
+        }
+        function mouseout()
+        {
+            document.getElementById("name").innerHTML="";
+        }
+    </script>
+</html>

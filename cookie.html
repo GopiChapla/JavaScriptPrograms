@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <button onclick="setcookie()">SetCookie</button>
+        <button onclick="getcookie()">GetCookie</button><br>
+        <p id="disp"></p>
+    </body>
+    <script>
+        function setcookie()
+        {
+            document.cookie="name=Ram; expires=Sat, 14 May 2022 12:00:00 UTC; path=file://";
+            console.log(document.cookie);
+        }
+        function getcookie()
+        {
+            var nm=document.cookie;
+            document.getElementById("disp").innerHTML=nm;
+        }
+    </script>
+</html>

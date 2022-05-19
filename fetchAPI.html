@@ -1,0 +1,15 @@
+<html>
+    <script>
+        url="https://jsonplaceholder.typicode.com/todos/";
+        fetch(url).then(res => res.json()).then(data => {
+        var text="<center><table border=1><tr><th>Id</th><th>Title</th></tr>";
+        for(var i=0;i<(data.length);i++)
+        {
+            text+="<tr><td>"+data[i].id+"</td><td>"+data[i].title+"</td></tr>";
+        }
+        text+="</table></center>";
+        document.write(text);
+    })
+        
+    </script>
+</html>

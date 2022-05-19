@@ -1,0 +1,20 @@
+<html>
+    <script>
+        document.write("<br>Math.floor(Math.random() * 10) : "+Math.floor(Math.random() * 10)+"<br>");          //0-9
+        document.write("<br>Math.floor(Math.random() * 11) : "+Math.floor(Math.random() * 11)+"<br>");          //0-10
+        document.write("<br>Math.floor(Math.random() * 100) : "+Math.floor(Math.random() * 100)+"<br>");        //0-99
+        document.write("<br>Math.floor(Math.random() * 101) : "+Math.floor(Math.random() * 101)+"<br>");        //0-100
+        document.write("<br>Math.floor(Math.random() * 10)+1 : "+(Math.floor(Math.random() * 10)+1)+"<br>");    //0-10
+        document.write("<br>Math.floor(Math.random() * 100)+1 : "+(Math.floor(Math.random() * 10)+1)+"<br>");   //0-100
+
+        function getRndInt1(min, max) {
+            return Math.floor(Math.random() * (max - min) ) + min;
+        }                                                                               //It does not include max value
+        document.write("<br>getRndInt1(10,20) : "+getRndInt1(10,20)+"<br>");  
+        
+        function getRndInt2(min, max) {
+            return Math.floor(Math.random() * (max - min) +1 ) + min;
+        }                                                                               //It includes max value
+        document.write("<br>getRndInt2(10,20) : "+getRndInt2(10,20)+"<br>");
+    </script>
+</html>

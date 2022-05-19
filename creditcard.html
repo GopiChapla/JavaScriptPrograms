@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Credit Card Validation</title>
+    </head>
+    <body>
+        <div style=" border: solid; padding: 50px; width: 200px; margin-left: 600px; margin-top: 200px;">
+            <input type="number" id="txt_cno" style="height: 40px; width: 200px;"/><br><br>
+            <button onclick="check_no()" style="height: 30px; width: 150px; margin-left:25px;">Check Number</button>
+        </div>
+    </body>
+    <script>
+        function check_no()
+        {
+            var no=document.getElementById("txt_cno").value;
+            if((no.slice(0,2)==34 || no.slice(0,2)==37) && no.length==15)
+            {
+                alert("Credit Card Number is Valid.");
+            }
+            else if(no.slice(0,1)==4 && (no.length==13 || no.length==16))
+            {
+                alert("Credit Card Number is Valid.");
+            }
+            else if((no.slice(0,2)==51 || no.slice(0,2)==52 || no.slice(0,2)==53 || no.slice(0,2)==54 || no.slice(0,2)==55) && no.length==16)
+            {
+                    alert("Credit Card Number is Valid.");
+            }
+            else if((no.slice(0,4)==6011 && no.length==16) || (no.slice(0,1)==5 && no.length==15))
+            {
+                alert("Credit Card Number is Valid.");
+            }
+            else if((no.slice(0,3)==300 || no.slice(0,3)==301 || no.slice(0,3)==302 || no.slice(0,3)==303 || no.slice(0,3)==304 || no.slice(0,3)==305 || no.slice(0,2)==36 || no.slice(0,2)==38 ) && no.length==14)
+            {
+                alert("Credit Card Number is Valid.");
+            }
+            else if(((no.slice(0,4)==2131 || no.slice(0,4)==1800) && no.length==15) || (no.slice(0,2)==35 && no.length==16))
+            {
+                alert("Credit Card Number is Valid.");
+            }
+            else
+            {
+                alert("Credit Card Number is not Valid.");
+            }
+        }
+    </script>
+</html>

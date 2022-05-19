@@ -1,0 +1,23 @@
+<html>
+    <button onclick="setData()">SetData</button>
+    <button onclick="getData()">GetData</button>
+    <p id="data"></p>
+    <script>
+        var data1={name:'Ram',age:30,gender:'Male'};
+        var data2={name:'Sita',age:20,gender:'Female'};
+
+        function setData()
+        {
+            localStorage.setItem("emp1",JSON.stringify(data1));
+            localStorage.setItem("emp2",JSON.stringify(data2));
+        }
+
+        function getData()
+        {
+            var e1=localStorage.getItem("emp1");
+            var e2=localStorage.getItem("emp2");
+            document.getElementById("data").innerHTML=e1+"<br>"+e2;
+        }
+
+    </script>
+</html>

@@ -1,0 +1,86 @@
+<html>
+    <script>
+        var s1="Hello! Good Morning Everyone";
+    
+        var s2=s1.slice(7,11);          //It also takes nagetive index
+        document.write("slice(7,11) : "+s2+"<br>");
+
+        s2=s1.substring(7,11);       //It does not take nagetive index
+        document.write("substring(7,11) : "+s2+"<br>");
+
+        s2=s1.substr(7,12);          //It count length
+        document.write("substr(7,12) : "+s2+"<br>");
+        
+        s2=s1.replace("Morning","Evening");          
+        document.write('replace("Morning","Evening") : '+s2+"<br>");
+
+        s2=s1.toLowerCase();          
+        document.write("toLowerCase() : "+s2+"<br>");
+
+        s2=s1.toUpperCase();          
+        document.write("toUpperCase() : "+s2+"<br>");
+
+        s2=" welcome";
+        var s3=s1.concat(s2);
+        document.write("concat(s2) : "+s3+"<br>");
+
+        s2="  welcome  ";
+        s3=s2.trim();
+        document.write("trim() : "+s3+"<br>");
+
+        s2="welcome";
+        s3=s2.padStart(10,"*");
+        document.write("padStart(3,'*') : "+s3+"<br>");
+
+        s2="welcome";
+        s3=s2.padEnd(10,"*");
+        document.write("padEnd(3,'*') : "+s3+"<br>");
+
+        s2="welcome";
+        s3=s2.charAt(4);
+        document.write("charAt(4) : "+s3+"<br>");
+
+        s2="welcome";
+        s3=s2.charCodeAt(4);
+        document.write("charCodeAt(4) : "+s3+"<br>");
+
+        s2="welcome";
+        s3=s2[4];
+        document.write("s2[4] : "+s3+"<br>");
+
+        s3=s1.split(" ");             //Converting into array
+        document.write("split(' ') : "+s3+"<br>");
+
+        s3=s1.split("");             //Converting into array
+        document.write("split('') : "+s3+"<br>");
+
+        //Searching Methods
+        s3=s1.indexOf("Good");          //cannot take regular expressions
+        document.write("indexOf('Good') : "+s3+"<br>");
+
+        s3=s1.lastIndexOf("o");    
+        document.write("LastIndexOf('o') : "+s3+"<br>");
+
+        s3=s1.search("Good");           //cannot take a second start position argument
+        document.write("serach('Good') : "+s3+"<br>");
+
+        s3=s1.match("Good");           
+        document.write("match('Good') : "+s3+"<br>");
+
+        s3=s1.includes("Good");           
+        document.write("includes('Good') : "+s3+"<br>");
+
+        s3=s1.startsWith("Good");           
+        document.write("startsWith('Good') : "+s3+"<br>");
+
+        s3=s1.startsWith("Good",7);           
+        document.write("startsWith('Good',7) : "+s3+"<br>");
+
+        s3=s1.endsWith("Good");           
+        document.write("endsWith('Good') : "+s3+"<br>");
+
+        s3=s1.endsWith("Good",11);           
+        document.write("endsWith('Good',11) : "+s3+"<br>");
+
+    </script>
+</html>

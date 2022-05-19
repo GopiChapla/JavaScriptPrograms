@@ -1,0 +1,63 @@
+<html>
+    <script>
+        let a=[10,20,30];
+        document.write("a : "+a+"<br>");
+
+        let arr=new Array(10,20,30);
+        document.write("arr : "+arr+"<br>");
+
+        document.write("a[0] : "+a[0]+"<br>");
+        document.write("a[1] : "+a[1]+"<br>");
+        document.write("a[2] : "+a[2]+"<br>");
+
+        a[0]=40;
+        document.write("a[0] : "+a[0]+"<br>");
+        document.write("a.length : "+a.length+"<br>");
+        document.write("a[a.length-1] : "+a[a.length-1]+"<br>");
+
+        //Retrive Whole Array through for loop
+        for(var i=0;i<a.length;i++)
+        {
+            document.write("a["+i+"] : "+a[i]+"<br>");
+        }
+
+        //foreach
+        a.forEach(fun);
+        function fun(v)
+        {
+            document.write(v+" ");
+        }
+
+        //Adding Element
+        a.push(50);
+        document.write("<br>a.push(50) : "+a+"<br>");
+        a[a.length]=60;
+        document.write("a[length] : "+a+"<br>");
+        a[10]=100;              // Creates undefined "holes"
+        document.write("a[10]=100 : "+a+"<br>");
+
+        //Assosiative Array
+       const ary = [];
+        ary["fname"] = "Ram";
+        ary["lname"] = "Dave";
+        ary["age"] = 46;
+        document.write("ary.length : "+ary.length+"<br>");     // Will return 0
+        document.write("ary[age] : "+ary["age"]+"<br>");
+        document.write("ary[0] : "+ary[0]+"<br>");      //return undefined
+
+        const ar = new Array(10);           //Parameter specifie a length if array...it creates an array with 10 elements
+        document.write("ar : "+ar+"<br>");
+        document.write("ar.length : "+ar.length+"<br>");
+
+        //Typeof
+        document.write("typeof ar : "+typeof ar+"<br>");
+        if(Array.isArray(ar))
+        {
+            document.write("This is Array..<br>");
+        }
+        if(a instanceof Array)
+        {
+            document.write("This is Array..<br>");
+        }
+    </script>
+</html>

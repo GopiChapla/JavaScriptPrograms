@@ -1,0 +1,27 @@
+<html>
+    <script>
+        const color=new Map([[10,"Red"],[20,"Green"],[30,"Blue"]]);
+        document.write(color.size+"<br>");
+        
+        color.set(40,"Gray");
+        document.write(color.size+"<br>");
+
+        document.write(color.get(10)+"<br>");
+        document.write(color.get(20)+"<br>");
+        document.write(color.get(30)+"<br>");
+        document.write(color.get(40)+"<br>");
+
+        color.delete(30);
+        document.write(color.has(30));
+
+        color.forEach (function(value) {
+            document.write(value+"   ");
+        })
+
+        document.write("<br>");
+
+        for (const x of color.entries()) {
+            document.write(x+"   ");
+        }
+    </script>
+</html>

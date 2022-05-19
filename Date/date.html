@@ -1,0 +1,80 @@
+<html>
+    <script>
+        var dt=new Date();
+        document.write(dt+"<br>");
+        
+        dt = new Date(2000, 11, 30, 06, 30, 30, 0);
+        document.write("<br>Date(2000, 11, 30, 06, 30, 30, 0) : "+dt+"<br>");
+
+        dt = new Date(1995, 16, 12, 10, 33, 30, 0);
+        document.write("<br>Date(1995, 16, 12, 10, 33, 30, 0) : "+dt+"<br>");
+
+        dt = new Date(2000, 11, 30, 06, 30, 30);
+        document.write("<br>Date(2000, 11, 30, 06, 30, 30) : "+dt+"<br>");
+
+        dt = new Date(2000, 11, 30, 06, 30);
+        document.write("<br>Date(2000, 11, 30, 06, 30) : "+dt+"<br>");
+
+        dt = new Date(2000, 11, 30, 06);
+        document.write("<br>Date(2000, 11, 30, 06) : "+dt+"<br>");
+
+        dt = new Date(2000, 11, 30);
+        document.write("<br>Date(2000, 11, 30) : "+dt+"<br>");
+
+        dt = new Date(2000, 11);
+        document.write("<br>Date(2000, 11) : "+dt+"<br>");
+
+        dt = new Date(56, 11, 30);              //if yoy give year in2 digit then it always takes 19xx.
+        document.write("<br>Date(56, 11, 30) : "+dt+"<br>");
+
+        dt = new Date("May 22 2018");
+        document.write('<br>Date("May 22 2018") : '+dt+"<br>");
+
+        dt = new Date("March 22 2018");
+        document.write('<br>Date("March 22 2018") : '+dt+"<br>");
+
+        dt = new Date("05/22/2018");
+        document.write('<br>Date("05/22/2018") : '+dt+"<br>");
+
+        dt = new Date("2000-12-30");
+        document.write('<br>Date("2000-12-30") : '+dt+"<br>");
+
+        dt = new Date("2000-12");
+        document.write('<br>Date("2000-12") : '+dt+"<br>");
+
+        dt = new Date("2000");
+        document.write('<br>Date("2000") : '+dt+"<br>");
+
+        dt = new Date("December 30, 2000 06:30:30");
+        document.write('<br>Date("December 30, 2000 30:30:00") : '+dt+"<br>");
+
+        dt = new Date(0);
+        document.write("<br>Date(0) : "+dt+"<br>");
+
+        dt = new Date(20000000000);
+        document.write("<br>Date(20000000000) : "+dt+"<br>");
+
+        dt = new Date(-20000000000);
+        document.write("<br>Date(-20000000000) : "+dt+"<br>");
+
+        document.write("<br>dt.toString() : "+dt.toString()+"<br>");
+
+        document.write("<br>dt.toUTCString() : "+dt.toUTCString()+"<br>");
+        
+        document.write("<br>dt.toDateString() : "+dt.toDateString()+"<br>");
+        
+        document.write("<br>dt.toISOString() : "+dt.toISOString()+"<br>");
+
+        dt = new Date("2015-03-25T12:00:00Z");
+        document.write('<br>Date("2015-03-25T12:00:00Z") : '+dt+"<br>");
+
+        dt = new Date("2015-03-25T12:00:00-06:30");
+        document.write('<br>Date("2015-03-25T12:00:00-06:30") : '+dt+"<br>");
+
+        document.write('<br>Date.parse("March 22, 2018") : '+Date.parse("March 22, 2018")+"<br>");
+        dp=Date.parse("March 22, 2018");
+        dt=new Date(dp);
+        document.write("<br>Date.parse into Date : "+dt+"<br>");
+        
+    </script>
+</html>

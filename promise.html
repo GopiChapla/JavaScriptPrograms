@@ -1,0 +1,15 @@
+<htm>
+    <script>
+        var p=new Promise(function(resolve,reject){
+            x=5;
+            if(x==5)
+                resolve("Ok");
+            else
+                reject("Error");
+        });
+        p.then(
+            //function(res){  document.write(res) },
+            function(rej){  document.write(rej) }
+        )
+    </script>
+</htm>

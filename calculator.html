@@ -1,0 +1,58 @@
+<html>
+    <link rel="stylesheet" type="text/css" href="calculator.css"/>
+    <body>
+
+        <h1>Calculator</h1>
+        <div>
+            <input type="number" id="txt_no1" placeholder="Enter Number1" class="txt"> <br>
+            <input type="number" id="txt_no2" placeholder="Enter Number2" class="txt"> <br>
+            <button onclick="add()" class="btn">+</button>
+            <button onclick="substract()" class="btn">-</button>
+            <button onclick="multiply()" class="btn">*</button>
+            <button onclick="division()" class="btn">/</button><br>
+            <button onclick="clr()" id="btnclr">clear</button>
+            <p id="answer" class="txt"></p>
+           
+        </div>
+</body>
+    <script>        
+        function add()
+        {
+            var no1=Number(document.getElementById("txt_no1").value);
+            var no2=Number(document.getElementById("txt_no2").value);
+            var ans=no1+no2;
+            document.getElementById("answer").innerHTML="Answer : "+ans;
+        }
+
+        function substract()
+        {
+            var no1=Number(document.getElementById("txt_no1").value);
+            var no2=Number(document.getElementById("txt_no2").value);
+            var ans=no1-no2;
+            document.getElementById("answer").innerHTML="Answer : "+ans;
+        }
+
+        function multiply()
+        {
+            var no1=Number(document.getElementById("txt_no1").value);
+            var no2=Number(document.getElementById("txt_no2").value);
+            var ans=no1*no2;
+            document.getElementById("answer").innerHTML="Answer : "+ans;
+        }
+
+        function division()
+        {
+            var no1=Number(document.getElementById("txt_no1").value);
+            var no2=Number(document.getElementById("txt_no2").value);
+            var ans=no1/no2;
+            document.getElementById("answer").innerHTML="Answer : "+ans;
+        }
+
+        function clr()
+        {
+            document.getElementById("txt_no1").value="";
+            document.getElementById("txt_no2").value="";
+            document.getElementById("answer").innerHTML="";
+        }
+    </script>
+</html>

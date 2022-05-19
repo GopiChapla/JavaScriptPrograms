@@ -1,0 +1,54 @@
+<html>
+    <script>
+        let no = 10;
+        let num=no.toString(32);
+        document.write("toString(32) : "+num+"<br>");
+        num=no.toString(16);
+        document.write("toString(16) : "+num+"<br>");
+        num=no.toString(12);
+        document.write("toString(12) : "+num+"<br>");
+        num=no.toString(10);
+        document.write("toString(10) : "+num+"<br>");
+        num=no.toString(8);
+        document.write("toString(8) : "+num+"<br>");
+        num=no.toString(2);
+        document.write("toString(2) : "+num+"<br>");
+
+        //Number as Object
+        num=new Number(10);
+        document.write("Typeof no : "+typeof no+"<br>");
+        document.write("Typeof num : "+typeof num+"<br>");
+
+        document.write("toExponential()"+no.toExponential() + "<br>" ); 
+        document.write("toExponential(2)"+no.toExponential(2) + "<br>" );
+        document.write("toExponential(4)"+no.toExponential(4) + "<br>" );
+
+        no = 87.256;
+        document.write("toFixed(0) : "+no.toFixed(0)+"<br>");
+        document.write("toFixed(2) : "+no.toFixed(2)+"<br>");
+        document.write("toFixed(4) : "+no.toFixed(4)+"<br>");
+        document.write("toFixed(5) : "+no.toFixed(5)+"<br>");
+
+        document.write("toPrecision() : "+no.toPrecision()+"<br>");
+        document.write("toPrecision(2) : "+no.toPrecision(2)+"<br>");
+        document.write("toPrecision(4) : "+no.toPrecision(4)+"<br>");
+
+        document.write("valueOf() : "+no.valueOf()+"<br>");
+        
+        document.write("Number('10') : "+Number("10")+"<br>");
+        document.write("Number(new Date('2000-11-19')) : "+Number(new Date("2000-11-19"))+"<br>");
+
+        document.write("parseInt('10') : "+parseInt("10")+"<br>");
+        document.write("parseInt('10 20') : "+parseInt("10 20")+"<br>");
+        document.write("parseFloat('10.5') : "+parseFloat("10.5")+"<br>");
+        document.write("parseFloat('10 20') : "+parseFloat("10 20")+"<br>");
+
+        document.write("Number.MAX_VALUE : "+Number.MAX_VALUE+"<br>");
+        document.write("Number.MIN_VALUE : "+Number.MIN_VALUE+"<br>");
+        document.write("Number.POSITIVE_INFINITY : "+Number.POSITIVE_INFINITY+"<br>");
+        document.write("Number.NEGATIVE_INFINITY : "+Number.NEGATIVE_INFINITY+"<br>");
+        document.write("Number.NaN : "+Number.NaN+"<br>");
+        document.write("20/'abc' : "+(20/'abc')+"<br>");
+    
+    </script>
+</html>

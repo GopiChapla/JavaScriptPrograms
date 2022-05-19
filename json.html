@@ -1,0 +1,14 @@
+<html>
+    <script>
+        const emp={fname:"Ram", lname:"Shah", age:30, gender:"Male"};
+        document.write("emp : "+emp+"<br>");
+        document.write("FName : "+emp.fname+"<br>");
+        document.write("LName : "+emp.lname+"<br>");
+        document.write("Age : "+emp.age+"<br>");
+        document.write("Gender : "+emp.gender+"<br>");
+        var emp1=JSON.stringify(emp);
+        document.write("JSON.stringyfy : "+emp1+"<br>");
+        var emp2=JSON.parse(emp1);
+        document.write("JSON.parse : "+emp2+"<br>");
+    </script>
+</html>

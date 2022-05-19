@@ -1,0 +1,20 @@
+<html>
+    <body>
+    <button id="btn" onclick="showhide()">Show Button</button>
+    <script>
+        function showhide()
+        {
+            var text=document.getElementById("btn").innerHTML;
+            alert(text);
+            if(text=="Show Button")
+            {
+                document.getElementById("btn").innerHTML="Hide Button";
+            }
+            else
+            {
+                document.getElementById("btn").innerHTML="Show Button";
+            }
+        }
+    </script>
+    </body>
+</html>
